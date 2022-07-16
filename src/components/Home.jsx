@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import validation from './validation';
 
+// useform hook pending 
 
 function Home() {
 
@@ -43,7 +44,7 @@ function Home() {
        Validation Page
         </h1>
         <div className='inputs'>
-          <label className='labels'>Name</label>
+          <label className='input-labels'>Name</label>
           <input
             className='form-input'
             type='text'
@@ -52,10 +53,10 @@ function Home() {
             value={values.name}
             onChange={onChange}
           />
-          {errors.name && <p>{errors.name}</p>}
+          {errors.name && <span>{errors.name}</span>}
         </div>
         <div className='inputs'>
-          <label className='labels'>Email</label>
+          <label className='input-labels'>Email</label>
           <input
             className='form-input'
             type='email'
@@ -64,10 +65,10 @@ function Home() {
             value={values.email}
             onChange={onChange}
           />
-           {errors.email && <p>{errors.email}</p>}
+           {errors.email && <span>{errors.email}</span>}
         </div>
         <div className='inputs'>
-          <label className='labels'>Password</label>
+          <label className='input-labels'>Password</label>
           <input
             className='form-input'
             type='password'
@@ -77,11 +78,11 @@ function Home() {
             onChange={onChange}
             
           />
-          {errors.password && <p>{errors.password}</p>}
+          {errors.password && <span>{errors.password}</span>}
         </div>
 
         <div className='inputs'>
-          <label className='labels'>Password</label>
+          <label className='input-labels'>Password</label>
           <input
             className='form-input'
             type='password'
@@ -90,7 +91,7 @@ function Home() {
             value={values.password2}
             onChange={onChange}
           />
-          {errors.password2 && <p>{errors.password2}</p>}
+          {errors.password2 && <span>{errors.password2}</span>}
         </div>
 
          <button className='formbtn' type='submit'>
