@@ -5,8 +5,15 @@
   
 }
 
-.form {
- padding: 100px 200px;
+.form-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  justify-self: center; 
+  justify-items: center;
 }
 
 /* body {
