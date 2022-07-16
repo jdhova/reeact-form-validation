@@ -1,14 +1,38 @@
 import React, {useState} from 'react';
-import useForm from './useForm';
+
 import validation from './validation';
-// import { useState } from 'react';
+
 
 function Home() {
 
+    const [values, setValues] = useState({
+        name: '',
+        email: '',
+        password: '',
+        password2: ''
+      });
+
+      const [errors, setErrors] = useState({});
+
+    const onChange = e => {
+        const { name, value} = e.target
+        setValues({
+          ...values,
+          [name] : value
+        });
+      };
+
+      const onSubmit = e => {
+        e.preventDefault();
+        console.log('gone')
+        setErrors(validation(values))
+
+      };
+    
 
     
 
-    const { onChange,values,onSubmit,errors} = useForm(validation)
+   
 
   
 
@@ -81,34 +105,4 @@ function Home() {
 }
 
 export default Home;
-
-
-
-
-
-
-// {/* <input
-//   id='name'
-//   type='text'
-//   value={name}
-//   name='name'
-//   placeholder='Enter your Name'
-//   // value={values.name}
-//   // onChange={onChange}
-//   className='input'
-//   onChange={(e) => setName(e.target.value)}
-// /> */}
-// {/* {errors.username && <p>{errors.username}</p>} */}
-
-
-  // const [name, setName] = useState("");
-    // const [email, setEmail] = useState("");
-    // const [password, setPassword] = useState("");
-    // const [password2, setPassword2] = useState("");
-
-    // const onSubmit = (event) => {
-    //     event.preventDefault();
-    //     console.log(`The name you entered was: ${name},${email},${password},${password2}`)
-    //   }
-
 
