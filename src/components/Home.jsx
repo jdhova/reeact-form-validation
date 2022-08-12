@@ -30,14 +30,14 @@ function Home() {
   };
 
   return (
-    <div className='container-fluid py-4'>
-      <div className="row my-5">
+    <div className='container-fluid bg'>
+      <div className="row">
         <div className="col-md-6 col-10 mx-auto">
           <form onSubmit={onSubmit}>
-            <h1 className='text-center'>
+            <h2 className='text-center text-white font-weight-bold mt-5'>
               Validation Page
-            </h1>
-            <div className='form-group'>
+            </h2>
+            <div className='form-group font-weight-bold'>
               <label className='input-labels'>Name</label>
               <input
                 className='form-control'
@@ -47,11 +47,11 @@ function Home() {
                 value={values.name}
                 onChange={onChange}
               />
-              <p className="text-danger">
+              <h6 className="text-white font-weight-bold">
                 {errors.name && <span>{errors.name}</span>}
-              </p>
+              </h6>
             </div>
-            <div className='form-group'>
+            <div className='form-group font-weight-bold'>
               <label className='input-labels'>Email</label>
               <input
                 className='form-control'
@@ -61,11 +61,11 @@ function Home() {
                 value={values.email}
                 onChange={onChange}
               />
-              <p className="text-danger">
+              <h6 className="text-white font-weight-bold">
                 {errors.email && <span>{errors.email}</span>}
-              </p>
+              </h6>
             </div>
-            <div className='form-group'>
+            <div className='form-group font-weight-bold'>
               <label className='input-labels'>Password</label>
               <input
                 className='form-control'
@@ -75,12 +75,12 @@ function Home() {
                 value={values.password}
                 onChange={onChange}
               />
-              <p className="text-danger">
+              <h6 className="text-white font-weight-bold">
                 {errors.password && <span>{errors.password}</span>}
-              </p>
+              </h6>
             </div>
-            <div className='form-group'>
-              <label className='input-labels'>Password</label>
+            <div className='form-group font-weight-bold'>
+              <label className='input-labels'>Confirm Password</label>
               <input
                 className='form-control'
                 type='password'
@@ -89,20 +89,18 @@ function Home() {
                 value={values.password2}
                 onChange={onChange}
               />
-              <p className="text-danger">
+              <h6 className="text-white font-weight-bold">
                 {errors.password2 && <span>{errors.password2}</span>}
-              </p>
+              </h6>
             </div>
-            <button className='btn btn-block btn-lg bg-transparent border border-dark' type='submit'>
+            <button className='btn btn-sm btn-block btn-primary border border-dark submit' type='submit'>
               Sign up
             </button>
-
-
-
           </form>
         </div>
       </div>
     </div>
+    
   );
 }
 

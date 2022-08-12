@@ -12,6 +12,7 @@ function App() {
       <header className="App-header">
      <Home/>
       </header>
+      
     </div>
   );
 }

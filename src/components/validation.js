@@ -2,10 +2,6 @@
 export default function validation(values) {
   let errors = {};
 
-  // destructinring and regex pending 
-
-  // const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/
-
   if (!values.name.trim()) {
     errors.name = 'Name is Mandatory';
   }
