@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import validation from './validation';
 
-// useform hook pending 
 
 function Home() {
 
