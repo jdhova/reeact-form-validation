@@ -2,11 +2,8 @@
 export default function validation(values) {
   let errors = {};
 
-<<<<<<< HEAD
-=======
   // destructinring and regex pending 
 
->>>>>>> 60b6d2ee2714b72fa4f1ecba4e39fcb0f683d7a0
   if (!values.name.trim()) {
     errors.name = 'Name is Mandatory';
   }

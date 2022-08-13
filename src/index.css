@@ -20,22 +20,7 @@ body{
   justify-items: center;
 }
 
-<<<<<<< HEAD
-button:hover{
-  color: rgb(255, 255, 255);
-  background-color: rgb(130, 130, 238);
-}
-.submit{
-  border-radius: 20px;
-}
-.form-control{
-  border-radius: 30px;
-  border: 3px solid rgb(52, 52, 255);
-  height: 6vh;
-}
-=======
 .text-center {
   color:burlywood
 }
 
->>>>>>> 60b6d2ee2714b72fa4f1ecba4e39fcb0f683d7a0
