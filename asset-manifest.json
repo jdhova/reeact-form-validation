@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/reeact-form-validation/static/css/main.a5d31cb2.css",
-    "main.js": "/reeact-form-validation/static/js/main.afdd8139.js",
+    "main.css": "/reeact-form-validation/static/css/main.2fae974f.css",
+    "main.js": "/reeact-form-validation/static/js/main.f2f0f997.js",
     "static/js/787.748bc859.chunk.js": "/reeact-form-validation/static/js/787.748bc859.chunk.js",
+    "static/media/wall-1851061__340.jpg": "/reeact-form-validation/static/media/wall-1851061__340.0025ba22d065fa03c2a2.jpg",
     "index.html": "/reeact-form-validation/index.html",
-    "main.a5d31cb2.css.map": "/reeact-form-validation/static/css/main.a5d31cb2.css.map",
-    "main.afdd8139.js.map": "/reeact-form-validation/static/js/main.afdd8139.js.map",
+    "main.2fae974f.css.map": "/reeact-form-validation/static/css/main.2fae974f.css.map",
+    "main.f2f0f997.js.map": "/reeact-form-validation/static/js/main.f2f0f997.js.map",
     "787.748bc859.chunk.js.map": "/reeact-form-validation/static/js/787.748bc859.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5d31cb2.css",
-    "static/js/main.afdd8139.js"
+    "static/css/main.2fae974f.css",
+    "static/js/main.f2f0f997.js"
   ]
 }
